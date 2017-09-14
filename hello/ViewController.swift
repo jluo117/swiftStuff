@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var output: UILabel!
+    
+    var count = 0
+    
+    @IBAction func addOne(_ sender: Any) {
+    count += 1
+    output.text = String(self.count)
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
